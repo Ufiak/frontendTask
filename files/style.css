@@ -374,8 +374,8 @@ a.reserve{
 
 
 
+
 .reservingWindow{
-		
 		
 		max-width: 1282px;
 		margin: auto;
@@ -386,106 +386,53 @@ a.reserve{
 		background-color: var(--greenTransparencyColor);
 		border: 3px solid var(--beigeQuarterColor);
 		border-radius: 5px;
+		
 }
 
-.listForReservingOptions{
-
+.listForReservingOptions {
 	max-width: 1000px;
 	margin:auto;
-	border-radius:5px;
-	background-color:white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	}
 
-}
-
-ul.reservingOptions {	
-	height:95px;
-	margin-bottom: 45px;
+.reservingOptions { 
 	list-style-type: none;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;	
-}
+	justify-content: center;
+	}
 
 
 
-a.resC{
-  color: var(--blackFullColor);
-  background-color: transparent;
-  text-decoration: none;
-	padding:37px; 
-	background-color: red;
-}
-
-
-a.checkAvailability{
-	color: var(--lightColorFont);	
-	border-radius: 0px 5px 5px 0px;
-	padding:37px; 
-	margin-right:10px;
-	background-color: var(--beigeFullColor);
-}
-
-a.dateArrival {
+li.resizeRes  {
+	background-color:white;
+	width:300px;
 	padding:37px;
+}
+
+li.leftRR {
 	border-radius: 5px 0px 0px 5px;
 }
 
-.reservingWindowTest{
-		
-		max-width: 1282px;
-		margin: auto;
-		margin-bottom:300px;
-		justify-content:   center;
-		list-style-type: none;
-		text-align:center;
-		background-color: var(--greenTransparencyColor);
-		border: 3px solid var(--beigeQuarterColor);
-		border-radius: 5px;
-		
-}
+li.rightRR{
 
-.listForReservingOptionsTest {
-	max-width: 1000px;
-	margin:auto;
-	border-radius:5px;
-	background-color:white;
-
-	}
-
-.reservingOptionsTest { 
-	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-background-color:red;
-border-radius:5px;
-	padding:37px; 
-
-	}
-
-
-a.resCT{
-  color: var(--blackFullColor);
-
-  text-decoration: none;
-}
-
-.checkAvailabilityTest{
-	color: var(--lightColorFont);	
 	border-radius: 0px 5px 5px 0px;
-	
-	
 	background-color: var(--beigeFullColor);
 }
+
+a.checkAvailability {
+		color: var(--lightColorFont);	
+}
+
+
+
+
 
 
 
 .sectionTwo {
 	
 	  overflow: auto;
+	   display: flex;
+	   justify-content: space-between;
 	
 
 	
@@ -512,18 +459,19 @@ a.resCT{
 	margin-left:90px;
 
 }
-
+/*
 .sTImage {
+	position: absolute;
 	float: right;
 	
 	max-width: 800px;
-	/*text-indent: -40%;*/
+	text-indent: -40%;
     height: 1000px;
   
 	overflow: hidden;
 	margin:90px;
-	position: absolute;
-	/*top: 900px; for test purposes of 2nd reserving window it is in halt*/
+	
+	top: 900px; 
 	left: 900px;
 	clip: rect(0px, 750px, 800px, 180px);
 	border: 12px solid white;
@@ -534,6 +482,11 @@ a.resCT{
 
 	 
 }
+
+.sTImage {
+	
+}
+
 
 .sectionThree {
 clear: left;
