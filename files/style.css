@@ -13,6 +13,7 @@
   --darkColorFont: rgba(47, 84, 90, 1);
   --middleLightFont: rgba(220, 196, 186, 0.6);
   --middleDarkFont: rgba(47, 84, 90, 0.6);
+  --shadowText: rgba(0, 0, 0, 0.3);
   
 }
 
@@ -38,6 +39,9 @@ h2 {
 	font-size: 50px;
 }
 h3 {
+	font-family: 'Playfair Display', serif;
+	color: var(--darkColorFont);
+	font-size: 28px;
 }
 h4 {
 	font-family: 'Roboto', sans-serif;
@@ -351,6 +355,7 @@ a.reserve{
 
 /* ---- END NAVIGATION BAR -----*/
 
+
 .window{
 	width: 100%;
     height: 300px;
@@ -447,11 +452,11 @@ a.checkAvailability {
 
 
 .sectionTwo {
-	
-	  overflow: auto;
+		overflow: hidden;
+	  
 	   display: flex;
 	   justify-content: space-between;
-	
+
 
 	
 	
@@ -462,9 +467,9 @@ a.checkAvailability {
 .sTText {
 	
 	max-width: 630px;
-	margin:75px;
-	top: 400px;
-	margin: 100px;
+	
+	
+	margin-left: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -478,26 +483,26 @@ a.checkAvailability {
 
 }
 
-.sTImage {
-	overflow:hidden;
 
-}
-/*
 .sTImage {
+	overflow: hidden;
 	position: absolute;
 	float: right;
 	
-	max-width: 800px;
-	text-indent: -40%;
-    height: 1000px;
+	max-width: 680px;
+	text-indent: -20%;
+    height: 630px;
   
-	overflow: hidden;
+
 	margin:90px;
 	
-	top: 900px; 
-	left: 900px;
-	clip: rect(0px, 750px, 800px, 180px);
+	top: 800px; 
+	left: 850px;
+	/*clip: rect(0px, 1000px, 800px, 0px);*/
+	
 	border: 12px solid white;
+	box-shadow: 0px 0px 16px 0px var(--shadowText);
+
 }
 
 .sTImage img {
@@ -512,7 +517,7 @@ a.checkAvailability {
 
 
 .sectionThree {
-	
+	overflow: hidden;
 	
 	
 	
@@ -522,8 +527,9 @@ a.checkAvailability {
 .apartmentFacts{
 		display: flex;
 	   justify-content: space-evenly; /*stuff responsible for flex box of this part*/
+	   text-align:center;
 	   list-style-type: none;
-		max-width:1400px;
+		max-width:800px;
 
 }
   
@@ -534,12 +540,8 @@ a.checkAvailability {
 	 padding:15px;
 	 
 	 width:200px;/*i wonder...*/
-	 list-style-type: none;
-	 
-	 
- 
-	  
-  text-decoration: none; 
+	 list-style-type: none;  
+	text-decoration: none; 
  }
  
  .apartmentFactsSquare > li {
@@ -583,6 +585,80 @@ ul.apartmentFactsSquare > li {
 	
 	
  }
+ 
+ .sThreeImage {
+	position: absolute;
+	overflow: hidden;
+	
+	top: 1400px; 
+	left: 850px;
+
+	
+	border: 12px solid white;
+	box-shadow: 0px 0px 16px 0px var(--shadowText);
+ }
+ 
+ 
+ #grad1 {
+	 	position: absolute;
+	top:1680px;
+
+  height: 1348px;
+  width: 1536px;
+  background-image: linear-gradient(rgba(47, 84, 90, 0.08), rgba(45, 80, 86, 0.01)); 
+	z-index: -1;
+  
+}
+
+.sectionFour{
+		overflow: hidden;
+}
+#apartments{
+	padding-top:50px;
+	text-align:center;
+	
+	   
+}
+
+#textShadow {
+	text-shadow: 2px 2px 8px var(--shadowText);
+}
+
+.slider {
+
+  width: 100%;
+  height: 510px;
+  padding: 10% 0px 75px 175px;
+  
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /*does not work ?*/
+  scroll-snap-type: x mandatory;
+
+	
+	
+}
+.slide {
+
+  width: 480px;
+  margin: 0px 10px 0px 10px;
+  flex-shrink: 0;
+  height: 327px;
+  background-color: red;
+  box-shadow: 0px 0px 16px 0px var(--shadowText)
+}
+
+.slide > img{
+	
+	width: 480px;
+	height: 210px;
+
+}	
+
+.slideText {
+	width: 480px;
+	background-color: navy;
+}
     
   /* ---- content media screen smallest ----*/	
 @media screen and (max-width: 600px) {
