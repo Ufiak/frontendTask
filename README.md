@@ -7,4 +7,4 @@ Content- fully work in progress, trying new ways to make it more flexible and se
 
 Demo (without images) 22.06.2019:
 
-https://jsfiddle.net/ufiak/7g9xqnkz/1/
+https://jsfiddle.net/ufiak/7g9xqnkz/6/
