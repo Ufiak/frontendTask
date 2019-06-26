@@ -505,15 +505,16 @@ a.checkAvailability {
 
 }
 
-.sTImage img {
-	/*max-width: initial;*/
+.sTImage > img {
+	  overflow: hidden;
 
 	 
 }
 
 .sTImage {
-	
+	overflow: hidden;
 }
+
 
 
 .sectionThree {
@@ -632,7 +633,7 @@ ul.apartmentFactsSquare > li {
   
   display: flex;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /*does not work ?*/
+  -webkit-overflow-scrolling: touch; /* does it work still? works on mobiles only with touching?*/
   scroll-snap-type: x mandatory;
 
 	
@@ -640,24 +641,31 @@ ul.apartmentFactsSquare > li {
 }
 .slide {
 
+	
   width: 480px;
   margin: 0px 10px 0px 10px;
   flex-shrink: 0;
   height: 327px;
   background-color: red;
-  box-shadow: 0px 0px 16px 0px var(--shadowText)
+  box-shadow: 0px 0px 16px 0px var(--shadowText);
+ 
+
 }
 
 .slide > img{
-	
-	width: 480px;
-	height: 210px;
+	object-fit: cover;  width: 480px;  height: 327px; */ /*does not work with IE*/
+
+
 
 }	
 
 .slideText {
+	position: relative;
+	top: -50px;
 	width: 480px;
-	background-color: navy;
+	height: 182px;
+	background-color: white;
+	  box-shadow: 0px 5px 16px 0px var(--shadowText);
 }
     
   /* ---- content media screen smallest ----*/	
